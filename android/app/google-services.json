@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "919669517308",
+    "project_id": "easacc-task-34b12",
+    "storage_bucket": "easacc-task-34b12.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919669517308:android:3589dd5e86d3501cea6079",
+        "android_client_info": {
+          "package_name": "com.example.easacc_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxBHwr2_8lYLD76TPCxmW81KryUlDBcRE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
