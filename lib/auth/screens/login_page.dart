@@ -1,3 +1,4 @@
+import 'package:easacc_task/home/screens/settings_page.dart';
 import 'package:easacc_task/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,7 +35,7 @@ class LoginScreen extends StatelessWidget {
                 Navigator.pop(context);
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (_) => HomeScreen()),
+                  MaterialPageRoute(builder: (_) => SettingsPage()),
                 );
               }
             },
