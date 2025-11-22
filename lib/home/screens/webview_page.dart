@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../logic/settings_cubit.dart';
-import '../logic/settings_state.dart';
+import '../logic/home_cubit.dart';
+import '../logic/home_state.dart';
 
 class WebViewPage extends StatefulWidget {
   const WebViewPage({super.key});

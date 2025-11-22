@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'settings_state.dart';
+import 'home_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeCubit extends Cubit<HomeState> {
