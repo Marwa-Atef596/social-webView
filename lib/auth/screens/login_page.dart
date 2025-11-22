@@ -1,5 +1,4 @@
 import 'package:easacc_task/home/screens/settings_page.dart';
-import 'package:easacc_task/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../logic/auth_cubit.dart';

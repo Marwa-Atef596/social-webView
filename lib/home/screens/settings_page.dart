@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../auth/logic/auth_cubit.dart';
-import '../logic/settings_cubit.dart';
-import '../logic/settings_state.dart';
+import '../logic/home_cubit.dart';
+import '../logic/home_state.dart';
 import 'webview_page.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -23,6 +23,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return BlocProvider(
       create: (_) => HomeCubit(),
       child: BlocBuilder<HomeCubit, HomeState>(
@@ -32,9 +33,7 @@ class _SettingsPageState extends State<SettingsPage> {
               appBar: AppBar(
                 actions: [
                   IconButton(
-                    icon: const Icon(
-                      Icons.logout,
-                    ),
+                    icon: const Icon(Icons.logout),
                     tooltip: 'Logout',
                     onPressed: () {
                       context.read<AuthCubit>().signOut();
@@ -48,6 +47,14 @@ class _SettingsPageState extends State<SettingsPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Text(
+                      "Enter Website URL",
+                      style: TextStyle(
+                        fontSize: size.width * 0.05,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: size.height * 0.02),
                     TextField(
                       controller: _controller,
                       decoration: const InputDecoration(
@@ -55,7 +62,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         border: OutlineInputBorder(),
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    SizedBox(height: size.height * 0.02),
                     ElevatedButton(
                       onPressed: () {
                         final url = _controller.text;
@@ -74,8 +81,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        minimumSize:
-                            Size(MediaQuery.of(context).size.width * 0.8, 50),
+                        minimumSize: Size(size.width * 0.8, size.height * 0.06),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),
