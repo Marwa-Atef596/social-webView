@@ -1,16 +1,29 @@
-# easacc_task
+# Flutter WebView & Social Login App
 
-A new Flutter project.
+A Flutter application that supports social media login (Google & Facebook) and a configurable WebView. Users can input a website URL to display, and the app can scan for available Wi-Fi networks and Bluetooth devices.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+* Google & Facebook authentication
+* Logout functionality
+* Settings page to input a URL for WebView
+* Dropdown lists for Wi-Fi networks and Bluetooth devices
+* State management with Flutter Bloc (Cubits)
+* Persistent URL storage using SharedPreferences
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* flutter_bloc
+* firebase_auth
+* google_sign_in
+* flutter_facebook_auth
+* webview_flutter
+* shared_preferences
+* flutter_blue_plus
+* wifi_iot
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run
+
+1. Clone the repository
+2. Install dependencies: `flutter pub get`
+3. Run the app: `flutter run`
